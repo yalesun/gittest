@@ -1,0 +1,64 @@
+curl --include \
+     --request POST \
+     --header "Content-Type: application/json" \
+     --header "Accept: application/json" \
+     --data-binary "{
+    \"postUserLogin\":{
+        \"login\":\"yale@raise.com\",
+        \"password\":\"coolstar1\",
+        \"remember\":1
+    }
+}" \
+'https://secure.gooddata.com/gdc/account/login'
+
+
+curl --include \
+     --header "Accept: application/json" \
+     --header "Cookie: Set-Cookie: GDCAuthTT=; path=/gdc; expires=Mon, 30-Jul-2012 09:12:42 GMT; secure; HttpOnly, GDCAuthSST=3RcYvF7rKrBARVDE; path=/gdc/account; secure; HttpOnly" \
+  'https://secure.gooddata.com/gdc/account/token'
+
+
+
+curl --include \
+     --header "Content-Type: application/json" \
+     --header "Accept: application/json" \
+     --header "Cookie: GDCAuthTT=iJ_bS4l956RRWo6MPO-jhDBJy5FqyzyZK0uTc3Q7WP6-FSGq9dWwQufYzbw7vxBhycvJ_9rvxuu_1BgllThT1Aze3YkFgZES3f4umJY0Tk-GUvIA7R3v6ahm5EBq1bP-dE53UkCJuDyjoEUs12r306dkE2rfCqcE1wH8Dysfb7l7InUiOiIzMDM2MzEiLCJ2IjoxNDMxNjMwMzQxLCJrIjoiOWExNDYwM2QtNmY4MS00ZjQ0LTgxMGEtZjlmNDZhZTI0MjA3IiwibCI6IjAifQ" \
+  'https://secure.gooddata.com/gdc/datawarehouse/instances/df7b03ede6a36cb8a4a12522f907feec/jdbc'
+
+
+curl --include \
+     --request GET \
+     --header "Content-Type: application/json" \
+     --header "Cookie: GDCAuthTT=Skca7e7r8TVL-ajMf8dw00wod7NGyjYABQ_3slrHls5AzlLPyAsb3LHX_w8uRYjLyruhjyLSCCUIpDsu2wPPD5G9djrrPK-zEnFQQc6TSA6h9JG2cz_ILvaQzV52SzETB1phkPKKmPevA0D_93pouk0oTsA4KtBELk8jS8ypA_97InUiOiIzMDM2MzEiLCJ2IjoxNDMxNjMyNzkxLCJrIjoiZmZhMTExYzEtNDE1Zi00NDhkLTk3MTAtOGY1ZTk4N2ZhOWRmIiwibCI6IjAifQ" \
+     --data-binary "    Accept: application/json" \
+'https://secure.gooddata.com/gdc/datawarehouse/instances/df7b03ede6a36cb8a4a12522f907feec/users'
+
+
+curl --include \
+     --header "Accept: application/json" \
+  'https://secure.gooddata.com/gdc/projects/egvtu3d5ltzirz0k0kvibcgj4hmcxytp'
+
+
+  {"userLogin":{"profile":"/gdc/account/profile/81dfa30b2baad61eed159a3e0fa09fae","state":"/gdc/account/login/81dfa30b2baad61eed159a3e0fa09fae"}}localhost:~ yalesun$ 
+
+
+  GDCAuthSST=95jqFShDd03z6cP1
+  curl --include \
+     --header "Accept: application/json" \
+     --header "Cookie: Set-Cookie: GDCAuthTT=; path=/gdc; expires=Mon, 30-Jul-2012 09:12:42 GMT; secure; HttpOnly, GDCAuthSST=95jqFShDd03z6cP1; path=/gdc/account; secure; HttpOnly" \
+  'https://secure.gooddata.com/gdc/account/token'; 
+
+
+  GDCAuthTT=iJ_bS4l956RRWo6MPO-jhDBJy5FqyzyZK0uTc3Q7WP6-FSGq9dWwQufYzbw7vxBhycvJ_9rvxuu_1BgllThT1Aze3YkFgZES3f4umJY0Tk-GUvIA7R3v6ahm5EBq1bP-dE53UkCJuDyjoEUs12r306dkE2rfCqcE1wH8Dysfb7l7InUiOiIzMDM2MzEiLCJ2IjoxNDMxNjMwMzQxLCJrIjoiOWExNDYwM2QtNmY4MS00ZjQ0LTgxMGEtZjlmNDZhZTI0MjA3IiwibCI6IjAifQ
+
+
+  'https://secure.gooddata.com/gdc/datawarehouse/instances/df7b03ede6a36cb8a4a12522f907feec/jdbc'
+
+
+
+
+
+  curl --include \
+     --header "Accept: application/sql;version=1" \
+      --header "Cookie: GDCAuthTT=YYEELb81NsJwXgq7oPebuLK7on58vn52OTUvZzJplyXSaI-U6SC84qZ8IdC015hDIjI1Sda1Eae48GL9X3drdpAJYI3diyjz5LPqP7obZDuZn4B3JU8iv-D6SRSNZZq34Z-r-LjOMBMuhSp8Przf95uSx5crM72seha9fAx3xjB7InUiOiIzMDM2MzEiLCJ2IjoxNDMxNjMzMjI1LCJrIjoiZmZhMTExYzEtNDE1Zi00NDhkLTk3MTAtOGY1ZTk4N2ZhOWRmIiwibCI6IjAifQ"\
+  'https://secure.gooddata.com/gdc/dataload/projects/egvtu3d5ltzirz0k0kvibcgj4hmcxytp/outputStage/diff'
