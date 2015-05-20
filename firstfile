@@ -54,6 +54,8 @@ curl --include \
 
   'https://secure.gooddata.com/gdc/datawarehouse/instances/df7b03ede6a36cb8a4a12522f907feec/jdbc'
 
+  this is a test
+
 
 
 
